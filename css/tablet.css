@@ -6,11 +6,11 @@
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 24px;
+    column-gap: var(--cards-gap);
   }
 
   .features-item {
-    flex-basis: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - var(--cards-gap)) / 2);
   }
 
   .features-text-title {
@@ -20,7 +20,15 @@
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 24px;
+    column-gap: var(--cards-gap);
+  }
+
+  .customers-list {
+    column-gap: var(--cards-gap);
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - var(--cards-gap) * 2) / 3);
   }
 }
 

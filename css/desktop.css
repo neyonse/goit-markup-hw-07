@@ -5,11 +5,11 @@
   }
 
   .features-list {
-    gap: 24px;
+    gap: var(--cards-gap);
   }
 
   .features-item {
-    flex-basis: calc((100% - 24px * 3) / 4);
+    flex-basis: calc((100% - var(--cards-gap) * 3) / 4);
   }
 
   .features-image {
@@ -30,6 +30,14 @@
   }
 
   .team-list {
-    gap: 24px;
+    gap: var(--cards-gap);
+  }
+
+  .customers-list {
+    gap: var(--cards-gap);
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - var(--cards-gap) * 5) / 6);
   }
 }
