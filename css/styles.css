@@ -36,10 +36,9 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1158px;
+  max-width: 428px;
 
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -94,8 +93,8 @@ img {
 /* Sections basic style */
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 /* Text styles */
@@ -357,19 +356,16 @@ header {
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .features-item {
-  flex-basis: calc(
-    (100% - var(--cards-gap) * (var(--features-item-number) - 1)) /
-      var(--features-item-number)
-  );
+  flex-basis: 100%;
 }
 
 .features-image {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -380,9 +376,30 @@ header {
   border-radius: var(--border-radius);
 }
 
+.features-text-title {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--text-title-color);
+  text-align: center;
+}
+
+.features-text-main {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-main-color);
+}
+
 /* Services section */
 
 .services {
+  display: none;
   padding-top: 0;
 }
 
@@ -407,8 +424,8 @@ header {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .team-item {
