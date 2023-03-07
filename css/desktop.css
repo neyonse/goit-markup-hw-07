@@ -4,6 +4,16 @@
     padding: 0 15px;
   }
 
+  .hero {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
   .features-list {
     gap: var(--cards-gap);
   }

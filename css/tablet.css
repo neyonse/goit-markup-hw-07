@@ -3,6 +3,18 @@
     max-width: 584px;
   }
 
+  .hero {
+    padding-bottom: 108px;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 40px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
