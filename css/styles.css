@@ -406,7 +406,7 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/hero-background-01.jpg');
+    url('../images/hero-background-mobile.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -796,6 +796,7 @@ footer .input-field::placeholder {
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 0;
   display: flex;
   width: 24px;
   height: 24px;
