@@ -3,6 +3,14 @@
     max-width: 584px;
   }
 
+  .button.secondary {
+    padding: 11px 23px;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
   .hero {
     padding-bottom: 108px;
   }
@@ -42,10 +50,65 @@
   .customers-item {
     flex-basis: calc((100% - var(--cards-gap) * 2) / 3);
   }
+
+  .portfolio.section {
+    padding-top: 96px;
+  }
+
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .portfolio-list {
+    margin-top: 72px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - var(--cards-gap)) / 2);
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px;
+    column-gap: 24px;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    text-align: start;
+  }
+
+  .footer-social-title {
+    text-align: start;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  footer .input-field {
+    width: 264px;
+  }
+
+  .button.primary.btn-subscribe {
+    width: 165px;
+    margin: 0;
+  }
+
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .features > .container {
+  .features > .container,
+  header > .container,
+  .portfolio > .container {
     max-width: 768px;
   }
 }
