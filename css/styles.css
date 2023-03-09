@@ -250,7 +250,6 @@ header {
   display: none;
 }
 
-.nav-link:is(:hover, :focus),
 .current {
   color: var(--button-hover-color);
 }

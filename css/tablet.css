@@ -47,6 +47,11 @@
     transition: background-color var(--hover-transition);
   }
 
+  .nav-link:is(:hover, :focus),
+  .current {
+    color: var(--button-hover-color);
+  }
+
   .nav-link.current::after {
     background-color: var(--button-hover-color);
   }
