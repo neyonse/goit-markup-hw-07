@@ -79,11 +79,7 @@
 
   .hero {
     padding-bottom: 108px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: var(--gradient-hero),
       url('../images/hero-background-tablet.jpg');
   }
 
@@ -91,11 +87,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
+      background-image: var(--gradient-hero),
         url('../images/hero-background-tablet@2x.jpg');
     }
   }
