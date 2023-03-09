@@ -31,7 +31,6 @@ body {
 }
 
 .container {
-  max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -225,6 +224,11 @@ header {
 
 .logo > .accent {
   color: var(--accent-color);
+  transition: color var(--hover-transition);
+}
+
+.logo:is(:hover, :focus) .accent {
+  color: var(--button-hover-color);
 }
 
 .nav {
@@ -233,160 +237,22 @@ header {
 }
 
 .nav-list {
-  display: flex;
-  margin-left: 120px;
-  gap: 40px;
+  display: none;
 }
 
-.nav-logo,
-.nav-link {
+.nav-logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 23px;
 }
 
-.nav-link {
-  position: relative;
-
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--text-title-color);
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  bottom: -1px;
-
-  background-color: transparent;
-  border-radius: 2px;
-  transition: background-color var(--hover-transition);
-}
-
-.nav-link.current::after {
-  background-color: var(--button-hover-color);
-}
-
-.nav-link:is(:hover, :focus)::after {
-  background-color: var(--button-hover-color);
-}
-
 .address {
-  margin-left: auto;
-}
-
-.address-link {
-  font-size: 12px;
-  line-height: 1.17;
-  font-style: normal;
-  letter-spacing: 0.04em;
-  color: var(--text-main-color);
+  display: none;
 }
 
 .nav-link:is(:hover, :focus),
-.address-link:is(:hover, :focus),
 .current {
   color: var(--button-hover-color);
-}
-
-/* Mobile menu */
-
-.mobile-menu-btn {
-  padding: 0;
-  margin-left: auto;
-
-  line-height: 0;
-
-  background-color: transparent;
-  border: none;
-}
-
-.mobile-menu-btn-icon {
-  fill: var(--text-title-color);
-}
-
-.mobile-menu-container {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  padding-top: 80px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  margin: 0 auto;
-
-  background-color: var(--text-second-color);
-  transform: translateX(100%);
-  transition: transform var(--hover-transition);
-}
-
-.mobile-menu-container.is-open {
-  transform: translateX(0%);
-}
-
-.menu-nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-bottom: auto;
-}
-
-.menu-address-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-bottom: 48px;
-}
-
-.menu-address-link.tel {
-  color: var(--accent-color);
-}
-
-.menu-address-link.email {
-  color: var(--text-main-color);
-}
-
-.menu-nav-link:is(:hover, :focus),
-.menu-address-link:is(:hover, :focus) {
-  color: var(--button-hover-color);
-}
-
-.menu-social-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 353px;
-}
-
-.menu-social-item {
-  width: 40px;
-  height: 40px;
-}
-
-.menu-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  transition: background-color var(--hover-transition);
-}
-
-.menu-social-link:is(:hover, :focus) {
-  background-color: var(--button-hover-color);
 }
 
 /* Hero section */
@@ -434,14 +300,6 @@ header {
 
 .features-image {
   display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 112px;
-  margin-bottom: 8px;
-
-  background-color: var(--button-color);
-  border-radius: var(--border-radius);
 }
 
 .features-text-title {
@@ -468,17 +326,6 @@ header {
 
 .services {
   display: none;
-  padding-top: 0;
-}
-
-.services-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--cards-gap);
-}
-
-.services-item {
-  flex-basis: calc((100% - var(--cards-gap) * 2) / 3);
 }
 
 /* Team section */
