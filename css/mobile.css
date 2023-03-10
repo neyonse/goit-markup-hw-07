@@ -105,6 +105,10 @@
   .menu-social-link:is(:hover, :focus) {
     background-color: var(--button-hover-color);
   }
+
+  .modal {
+    width: calc(100% - 2 * 15px);
+  }
 }
 
 @media screen and (max-width: 432px) {
